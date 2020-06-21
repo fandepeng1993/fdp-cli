@@ -1,0 +1,23 @@
+{
+  "name": "fdp-cli",
+  "version": "1.0.0",
+  "description": "fdp-cli 的手脚架工具",
+  "main": "index.js",
+  "bin": {
+    "fdp-cli": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.6",
+    "inquirer": "^7.2.0",
+    "log-symbols": "^4.0.0",
+    "ora": "^4.0.4"
+  }
+}
