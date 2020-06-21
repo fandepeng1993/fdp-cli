@@ -1,5 +1,5 @@
 {
-  "name": "fdp-cli",
+  "name": "@frid/fdp-cli",
   "version": "1.0.0",
   "description": "fdp-cli 的手脚架工具",
   "main": "index.js",
@@ -19,5 +19,14 @@
     "inquirer": "^7.2.0",
     "log-symbols": "^4.0.0",
     "ora": "^4.0.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fandepeng1993/fdp-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fandepeng1993/fdp-cli/issues"
+  },
+  "homepage": "https://github.com/fandepeng1993/fdp-cli#readme"
 }
