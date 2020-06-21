@@ -7,7 +7,7 @@ const inquirer = require('inquirer');
 const ora = require('ora');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
-const templateURL = 'http://xxxxxx:9999:HTML5/H5Template#master';
+const templateURL = 'https://github.com/fandepeng1993/fdp-react-ts-template.git#master';
 
 program.version('1.0.0', '-v, --version')
   .command('init <name>')
