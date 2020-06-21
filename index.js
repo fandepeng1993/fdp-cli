@@ -7,7 +7,8 @@ const inquirer = require('inquirer');
 const ora = require('ora');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
-const templateURL = 'https://github.com/fandepeng1993/fdp-react-ts-template#master';
+// https://github.com:bear-new/latest-webpack-cli#master
+const templateURL = 'https://github.com:fandepeng1993/fdp-react-ts-template#master';
 
 program.version('1.0.0', '-v, --version')
   .command('init <name>')
