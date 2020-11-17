@@ -44,6 +44,7 @@ program.version('1.0.0', '-v, --version')
               fs.writeFileSync(fileName, result);
             }
             console.log(symbols.success, chalk.green('项目初始化完成'));
+            console.log(symbols.info, chalk.green(`启动项目命令：cd ${name},npm install,npm run start`));
           }
         });
       });
