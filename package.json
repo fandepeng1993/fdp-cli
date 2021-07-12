@@ -1,6 +1,6 @@
 {
   "name": "@frid/fdp-cli",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "一款基于nodeJS快速创建react+typesrcript的构建wepapp项目的手脚架",
   "keywords": ["react","redux","react-redux","redux-saga","i18next","typerscript","react-router","react-cli","nodeJS","mockjs","proxy"],
   "main": "index.js",
