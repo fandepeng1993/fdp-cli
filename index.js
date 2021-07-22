@@ -9,6 +9,7 @@ const chalk = require('chalk');
 const symbols = require('log-symbols');
 // https://github.com:bear-new/latest-webpack-cli#master
 const templateURL = 'https://github.com:fandepeng1993/fdp-react-ts-template#master';
+const antdProURL = 'https://github.com:fridfan/fdp-react-antdpro-ts-template#master';
 
 program.version('1.0.0', '-v, --version')
   .command('init <name>')
@@ -22,11 +23,20 @@ program.version('1.0.0', '-v, --version')
         {
           name: 'author',
           message: '请输入作者名称'
+        },
+        {
+          type:'list',
+          message: '请选择一项模版:',
+          name: 'project',
+          choices: [
+            {name:'react-ts-template(ant3.x版本)',value:templateURL},
+            {name:'react-antdpro-ts-template(antdpro版本)',value:antdProURL}
+          ]
         }
       ]).then((answers) => {
         const spinner = ora('正在下载模板...');
         spinner.start();
-        download(templateURL, name, {clone: true}, (err) => {
+        download(answers.project, name, {clone: true}, (err) => {
           if (err) {
             spinner.fail();
             console.log(symbols.error, chalk.red(err));
@@ -50,7 +60,7 @@ program.version('1.0.0', '-v, --version')
       });
     } else {
       // 错误提示项目已存在，避免覆盖原有项目
-      console.log(symbols.error, chalk.red('项目已存在'));
+      console.log(symbols.error, chalk.red('项目已存在同名'));
     }
   });
 program.parse(process.argv);
