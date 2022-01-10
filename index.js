@@ -10,6 +10,7 @@ const symbols = require('log-symbols');
 // https://github.com:bear-new/latest-webpack-cli#master
 const templateURL = 'https://github.com:fandepeng1993/fdp-react-ts-template#master';
 const antdProURL = 'https://github.com:fridfan/fdp-react-antdpro-ts-template#master';
+const jsxTmpURL = 'https://github.com:fandepeng1993/fdp-react-jsx-standard-template#master';
 
 program.version('1.0.0', '-v, --version')
   .command('init <name>')
@@ -25,12 +26,13 @@ program.version('1.0.0', '-v, --version')
           message: '请输入作者名称'
         },
         {
-          type:'list',
+          type: 'list',
           message: '请选择一项模版:',
           name: 'project',
           choices: [
-            {name:'react-ts-template(ant3.x版本)',value:templateURL},
-            {name:'react-antdpro-ts-template(antdpro版本)',value:antdProURL}
+            {name: 'react-ts-template(ant3.x版本)', value: templateURL},
+            {name: 'react-antdpro-ts-template(antdpro版本)', value: antdProURL},
+            {name: 'fdp-react-jsx-standard-template', value: jsxTmpURL}
           ]
         }
       ]).then((answers) => {
