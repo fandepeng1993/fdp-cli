@@ -30,9 +30,9 @@ program.version('1.0.0', '-v, --version')
           message: '请选择一项模版:',
           name: 'project',
           choices: [
+            {name: 'react-jsx-standard-template', value: jsxTmpURL},
             {name: 'react-ts-template(ant3.x版本)', value: templateURL},
-            {name: 'react-antdpro-ts-template(antdpro版本)', value: antdProURL},
-            {name: 'fdp-react-jsx-standard-template', value: jsxTmpURL}
+            {name: 'react-antdpro-ts-template(antdpro版本)', value: antdProURL}
           ]
         }
       ]).then((answers) => {

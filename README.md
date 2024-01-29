@@ -1,8 +1,15 @@
 # fdp-cli
 ## 一款基于nodeJS快速创建react+typesrcript的构建wepapp项目的手脚架
-### 内置两套模版库
+### 内置三套模版库
 
-#### 一.react-ts-template模版
+#### 一.react-jsx-standard-template模版（推荐）
+    1.面向antd V5 和 react v18。
+    2.react-redux 和 @reduxjs/toolkit。
+    3.搭载redux,@reduxjs/toolkit,react-router v6,react-redux,redux-saga。
+    4.支持多语言i18next 语言包动态加载。
+    5.支持多环境打包。
+
+#### 二.react-ts-template模版（不推荐）
     1.内置兼容IE8+浏览器。
     2.支持多语言i18next。
     3.支持多环境打包。
@@ -12,7 +19,7 @@
     7.内置mock数据功能和proxy代理功能。
 
 
-#### 二.react-antdpro-ts-template模版
+#### 三.react-antdpro-ts-template模版（不推荐）
     1.面向antd pro V5。
     2.umi3.x,pro-components页面级组件,antd4.x。
     3.支持多环境打包。
@@ -21,12 +28,7 @@
     问题描述：https://github.com/ant-design/ant-design-pro/issues/7696
     问题描述：https://github.com/ant-design/ant-design-pro/issues/7721
 
-#### 三.react-jsx-standard-template-template模版
-    1.面向antd V5 和 react v18。
-    2.react-redux 和 @reduxjs/toolkit。
-    3.搭载redux,@reduxjs/toolkit,react-router v6,react-redux,redux-saga。
-    4.支持多语言i18next 语言包动态加载。
-    5.支持多环境打包。
+
 
 ### 使用
 #### 快速创建语法
